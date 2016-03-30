@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_btn_filter"
+        android:padding="4dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent = "48%"
+            android:id="@+id/btn_apply_filter"
+            android:text="Apply"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_alignParentRight="true"
+            app:layout_widthPercent = "48%"
+            android:id="@+id/btn_reset_filter"
+            android:text="Reset"/>
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/category_list"
+        android:layout_above="@id/layout_btn_filter"
+        android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

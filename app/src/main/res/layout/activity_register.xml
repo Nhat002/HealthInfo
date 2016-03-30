@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:background ="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="@color/colorNeon"
+        android:id="@+id/register_label"
+        android:text="@string/register"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_username"
+        android:id="@+id/new_username_label"
+        android:textSize="20sp"
+        android:textColor="#ffffffff"
+        android:layout_below="@id/register_label"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_username_field"
+        android:hint="@string/enter_name"
+        android:textColorHint="@color/colorNeon"
+        android:layout_below="@id/new_username_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_valid_used"
+        android:layout_below="@id/new_username_field"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_password"
+        android:id="@+id/new_password_label"
+        android:textSize="20sp"
+        android:textColor="#ffffffff"
+        android:layout_below="@id/username_valid_used"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/new_password_field"
+        android:layout_below="@id/new_password_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColorHint="@color/colorNeon"
+        android:hint="@string/enter_password" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_below="@id/new_password_field"
+        android:layout_marginTop="32dp"
+        android:id="@+id/btn_submit_register" />
+
+</RelativeLayout>
