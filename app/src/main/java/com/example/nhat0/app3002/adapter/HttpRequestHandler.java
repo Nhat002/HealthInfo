@@ -56,8 +56,10 @@ public class HttpRequestHandler {
         InputStream in = null;
         if (url != null) {
             try {
-                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-                in = new BufferedInputStream(urlConnection.getInputStream());
+                HttpURLConnection urlConnection =
+                        (HttpURLConnection)url.openConnection();
+                in = new BufferedInputStream(
+                        urlConnection.getInputStream());
             } catch (IOException e) {
                 e.printStackTrace();
             }

@@ -29,11 +29,11 @@ public class AppPreferences {
     public static String REMEMBER_LOGIN = "remember_login";
     public static String[] allCategory = {"Weather Forecast","Disease","Healthcare Information","Warning","Advisory","Guide"};
     public static String[] healthcareCategory = {"Warning","Advisory","Guide"};
-    public static String WeatherDataAPI = "http://54.169.116.128/weather";
+
 
     public static final String DATA = "data_single_view" ;
     public static final String DATA_ID = "id";
     public static final String DATA_TYPE = "type";
     public static String DiseaseDataAPI = "http://54.169.116.128/disease";
-
+    public static String WeatherDataAPI = "http://54.169.116.128/weather";
 }
